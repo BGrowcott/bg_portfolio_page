@@ -1,0 +1,66 @@
+body {
+    background-color: #26428b ;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+}
+
+#logo {
+    width: 80px;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0px 30px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Main */
+
+/* Section1 - intro + art + photo*/
+
+#section1 {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#section1 article {
+    flex: 40%;
+    text-align: center;
+}
+
+#section1 figure {
+    flex: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#benphoto {
+    width: 50%;
+    border: 5px solid black;
+}
+
+#benart {
+    width: 50%;
+    vertical-align: middle;
+}
