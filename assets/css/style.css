@@ -11,6 +11,7 @@ a {
 
 header a:hover {
     text-shadow: 0px 0px 20px rgb(226, 139, 9);
+    font-size: 120%;
 }
 
 /* Header */
@@ -77,6 +78,15 @@ box-shadow: 0px 0px 20px rgb(226, 139, 9);
     width: 50%;
 }
 
+#face {
+    font-family: monospace;
+    display: none;
+}
+
+#benart:hover + #face {
+    display: block;
+}
+
 h1 {
     font-size: 160%;
     margin: 10px 0px;
@@ -110,4 +120,15 @@ p {
 
 #aboutme {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+#contact {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#contact nav ul li {
+    display: inline-block;
+    margin: 5%;
 }
