@@ -1,17 +1,30 @@
+:root {
+    --backgroundcolor: #090c2cee;
+    --textcolor: #f5f5dc;
+    --colorshadow: 0px 0px 20px orange;
+    --boxshadow: 0px 0px 20px black;
+}
+
 body {
-    background-color: #26428b ;
-    color: white;
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
     font-family: 'Courier New', Courier, monospace;
 }
 
 a {
-    color: white;
+    color: beige;
     text-decoration: none;
+    text-decoration: underline;
 }
 
 header a:hover {
-    text-shadow: 0px 0px 20px rgb(226, 139, 9);
+    text-shadow: var(--colorshadow);
     font-size: 120%;
+    transition: all 0.5s;
+}
+
+p {
+    line-height: 130%;
 }
 
 /* Header */
@@ -21,10 +34,11 @@ header {
     flex-wrap: wrap;
     align-content: center;
     width: 100%;
+    box-shadow: var(--boxshadow);
 }
 
 #logo {
-    width: 80px;
+    width: 50px;
 }
 
 header nav {
@@ -38,7 +52,6 @@ header nav ul li {
     display: inline-block;
     margin: 0px 30px;
     cursor: pointer;
-    text-decoration: underline;
 }
 
 /* Main */
@@ -51,6 +64,7 @@ header nav ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 #section1 article {
@@ -68,14 +82,19 @@ header nav ul li {
 #benphoto {
     width: 50%;
     border: 5px solid black;
+    box-shadow: var(--boxshadow);
 }
 
-#benart:hover {
-box-shadow: 0px 0px 20px rgb(226, 139, 9);
+#benart img {
+    width: 30%;
+    transition: all 0.5s;
+    box-shadow: var(--boxshadow);
 }
 
-#benart {
-    width: 50%;
+
+#benart img:hover {
+box-shadow: var(--colorshadow);
+transition: all 0.5s;
 }
 
 #face {
@@ -83,7 +102,7 @@ box-shadow: 0px 0px 20px rgb(226, 139, 9);
     display: none;
 }
 
-#benart:hover + #face {
+#benart:hover #face {
     display: block;
 }
 
@@ -102,24 +121,83 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
+    margin-left: 100px;
 }
 
 .workcard {
-    width:33.33%;
+    width: 29%;
     text-align: center;
     border: 5px solid black;
-    height: 200px;
+    height: 300px;
+    margin: 1%;
+    box-shadow: var(--boxshadow);
+}
+
+#workcard2 {
+    margin-left: 5%;
+}
+
+.workcard:hover {
+    width: 30%;
+    height: 310px;
+    box-shadow: var(--colorshadow);
+    transition: all 1s;
 }
 
 #maincard {
     width:100%;
-    height: 250px;
+    height: 350px;
+    background-image: url("../images/cheat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+#maincard:hover {
+width: 110%;
+height: 500px;
+}
+
+.workheader {
+    width: 20%;
+    background-color: rgb(20, 25, 66);
+    min-height: 50px;
+    border: 1px dashed rgb(32, 112, 107);
+    position: relative;
+    top: -20px;
+    left: 10px;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Section 3 - about me & contact */
 
 #aboutme {
+    display: flex;
+    flex-wrap: wrap;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+#aboutme article, figure {
+    width: 45%;
+}
+
+#aboutme article {
+    margin-left: 50px;
+}
+
+#aboutme figure {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#benthought {
+    width: 100%;
 }
 
 #contact {
