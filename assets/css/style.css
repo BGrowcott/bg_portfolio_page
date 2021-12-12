@@ -95,6 +95,7 @@ header nav ul li {
 #benart img:hover {
 box-shadow: var(--colorshadow);
 transition: all 0.5s;
+width: 40%;
 }
 
 #face {
