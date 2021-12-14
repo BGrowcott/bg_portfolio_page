@@ -15,12 +15,13 @@ a {
     color: beige;
     text-decoration: none;
     text-decoration: underline;
+    transition: all 0.5s;
 }
 
 header a:hover {
     text-shadow: var(--colorshadow);
     font-size: 120%;
-    transition: all 0.5s;
+    
 }
 
 p {
@@ -35,6 +36,7 @@ header {
     align-content: center;
     width: 100%;
     box-shadow: var(--boxshadow);
+    border-bottom: 1px solid beige;
 }
 
 #logo {
@@ -56,20 +58,44 @@ header nav ul li {
 
 /* Main */
 
-/* Section1 - intro + art + photo*/
+/* Section1 - intro + photo*/
 
 #section1 {
     margin:50px;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center;   
     
 }
 
 #section1 article {
     flex: 40%;
-    text-align: center;
+    text-align: left;
+    color: beige;
+    font-size: 140%;
+    animation-duration: 4s;
+    animation-name: bgcolor;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    border-radius: 20px;
+}
+
+#section1 article p {
+    margin: 20px;
+}
+
+
+
+@keyframes bgcolor {
+    from {
+        color: beige;
+    }
+    to {
+        background-color: rgb(189, 251, 255);
+        color: var(--backgroundcolor);
+        box-shadow: var(--boxshadow);
+    }
 }
 
 #section1 figure {
@@ -85,31 +111,10 @@ header nav ul li {
     box-shadow: var(--boxshadow);
 }
 
-#benart img {
-    width: 30%;
-    transition: all 0.5s;
-    box-shadow: var(--boxshadow);
-}
-
-
-#benart img:hover {
-box-shadow: var(--colorshadow);
-transition: all 0.5s;
-width: 40%;
-}
-
-#face {
-    font-family: monospace;
-    display: none;
-}
-
-#benart:hover #face {
-    display: block;
-}
 
 h1 {
-    font-size: 160%;
-    margin: 10px 0px;
+    font-size: 145%;
+    margin: 20px;
 }
 
 p {
@@ -118,11 +123,21 @@ p {
 
 /* section2 -my work */
 
+.title {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#section2 {
+    border-top: 1px solid beige;
+}
+
 #mywork {
     display: flex;
     flex-wrap: wrap;
     margin: 50px;
-    margin-left: 100px;
+    justify-content: center;
+    
 }
 
 .workcard {
@@ -131,23 +146,22 @@ p {
     border: 5px solid black;
     height: 300px;
     margin: 1%;
-    box-shadow: var(--boxshadow);
-}
-
-#workcard2 {
-    margin-left: 5%;
+    margin-left: 0%;
+    box-shadow: var(--boxshadow), inset 0px 0px 200px black;
+    border-radius: 10px;
+    transition: all 1s;
 }
 
 .workcard:hover {
     width: 30%;
     height: 310px;
     box-shadow: var(--colorshadow);
-    transition: all 1s;
+    
 }
 
 #maincard {
-    width:100%;
-    height: 350px;
+    width:70%;
+    height: 310px;
     background-image: url("../images/cheat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,8 +169,8 @@ p {
 }
 
 #maincard:hover {
-width: 110%;
-height: 500px;
+height: 380px;
+width: 72%;
 }
 
 .workheader {
@@ -179,19 +193,32 @@ height: 500px;
 #aboutme {
     display: flex;
     flex-wrap: wrap;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    align-items: center;
 }
 
 #aboutme article, figure {
-    width: 45%;
+    flex: 40%;
 }
 
 #aboutme article {
-    margin-left: 50px;
+    flex: 40%;
+    margin: 50px;
 }
 
+#aboutme article h3 {
+    margin: 20px;
+}
+
+#aboutme article p {
+    margin: 20px;
+    box-shadow: var(--boxshadow);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+
 #aboutme figure {
-    margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,3 +238,135 @@ height: 500px;
     display: inline-block;
     margin: 5%;
 }
+
+/* Footer */
+
+footer {
+    box-shadow: var(--boxshadow);
+}
+
+#benart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#benart img {
+    width: 80px;
+    transition: all 0.5s;
+    box-shadow: var(--boxshadow);
+}
+
+
+#benart img:hover {
+box-shadow: var(--colorshadow);
+width: 90px;
+transform: rotate(360deg);
+}
+
+#face {
+    font-family: monospace;
+    display: none;
+}
+
+#benart:hover #face {
+    display: block;
+}
+
+/* media queries */
+
+@media screen and (max-width:890px) {
+    * {transition: all 0.5s;}
+
+    #section1 {
+        flex-direction: column;         
+    }
+
+    #section1 article {
+        width: 50%;
+        font-size: 120%;
+      
+    }
+
+    #section1 figure {
+        width: 50%;
+      }
+
+      #benphoto {
+          width: 100%;
+      }
+
+    .workcard {
+        width: 80%;
+    }
+
+    #maincard {
+        width:90%;
+    }
+
+    #maincard:hover {
+        width:95%;
+    }
+
+
+    .workcard:hover {
+        width: 90%;
+        height: 350px;
+    }
+
+    #mywork {
+        flex-direction: column;
+        margin: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #workcard2 {
+        margin-left: 0%;
+    }
+
+    #aboutme {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}
+
+@media screen and (max-width:710px) {
+
+    * {transition: all 0.5s;}
+
+    #section1 {
+        flex-direction: column;         
+    }
+
+    #section1 article {
+        width: 70%;
+        font-size: 110%;
+    }
+
+    #section1 figure {
+        width: 70%;
+      }
+
+      #benphoto {
+        width: 100%;
+      }
+
+    }
+
+    @media screen and (max-width:540px){
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header nav {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+    }
