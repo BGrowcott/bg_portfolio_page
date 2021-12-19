@@ -1,372 +1,370 @@
+/* variables */
 :root {
-    --backgroundcolor: #090c2cee;
-    --textcolor: #f5f5dc;
-    --colorshadow: 0px 0px 20px orange;
-    --boxshadow: 0px 0px 20px black;
+  --backgroundcolor: #090c2cee;
+  --textcolor: #f5f5dc;
+  --colorshadow: 0px 0px 20px orange;
+  --boxshadow: 0px 0px 20px black;
 }
-
+/* general */
 body {
-    background-color: var(--backgroundcolor);
-    color: var(--textcolor);
-    font-family: 'Courier New', Courier, monospace;
+  background-color: var(--backgroundcolor);
+  color: var(--textcolor);
+  font-family: "Courier New", Courier, monospace;
 }
 
 a {
-    color: beige;
-    text-decoration: none;
-    text-decoration: underline;
-    transition: all 0.5s;
-}
-
-header a:hover {
-    text-shadow: var(--colorshadow);
-    font-size: 120%;
-    
+  color: beige;
+  text-decoration: none;
+  text-decoration: underline;
+  transition: all 0.5s;
 }
 
 p {
-    line-height: 130%;
+  line-height: 130%;
 }
 
 /* Header */
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    width: 100%;
-    box-shadow: var(--boxshadow);
-    border-bottom: 1px solid beige;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  box-shadow: var(--boxshadow);
+  border-bottom: 1px solid beige;
+}
+
+li a:hover {
+  text-shadow: var(--colorshadow);
+  font-size: 120%;
 }
 
 #logo {
-    width: 50px;
+  width: 50px;
 }
 
 header nav {
-    margin-left: auto;
-    margin-right: 10%;
-    display: flex;
-    align-items: center;
+  margin-left: auto;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin: 0px 30px;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0px 30px;
+  cursor: pointer;
 }
 
 /* Main */
 
-/* Section1 - intro + photo*/
+/* Section1 - intro + photo */
 
 #section1 {
-    margin:50px;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;   
-    
+  margin: 50px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 #section1 article {
-    flex: 40%;
-    text-align: left;
-    color: beige;
-    font-size: 140%;
-    animation-duration: 4s;
-    animation-name: bgcolor;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    border-radius: 20px;
+  flex: 40%;
+  text-align: left;
+  color: var(--textcolor);
+  font-size: 140%;
+  animation-duration: 4s;
+  animation-name: bgcolor;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 #section1 article p {
-    margin: 20px;
+  margin: 20px;
 }
 
-
+/* animation for article background */
 
 @keyframes bgcolor {
-    from {
-        color: beige;
-    }
-    to {
-        background-color: rgb(189, 251, 255);
-        color: var(--backgroundcolor);
-        box-shadow: var(--boxshadow);
-    }
+  from {
+    color: beige;
+  }
+  to {
+    background-color: rgb(189, 251, 255);
+    color: var(--backgroundcolor);
+    box-shadow: var(--boxshadow);
+    border-radius: 20px;
+  }
 }
 
+/* end of animation */
+
+/* photo styles */
+
 #section1 figure {
-    flex: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #benphoto {
-    width: 50%;
-    border: 5px solid black;
-    box-shadow: var(--boxshadow);
+  width: 50%;
+  border: 5px solid black;
+  box-shadow: var(--boxshadow);
+  border-radius: 20px;
 }
-
 
 h1 {
-    font-size: 145%;
-    margin: 20px;
-}
-
-p {
-    margin: 10px 0px;
+  font-size: 145%;
+  margin: 20px;
 }
 
 /* section2 -my work */
 
 .title {
-    margin-left: 50px;
-    margin-top: 10px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 #section2 {
-    border-top: 1px solid beige;
+  border-top: 1px solid beige;
 }
 
 #mywork {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    justify-content: center;
-    
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
 }
 
 .workcard {
-    width: 29%;
-    text-align: center;
-    border: 5px solid black;
-    height: 300px;
-    margin: 1%;
-    margin-left: 0%;
-    box-shadow: var(--boxshadow), inset 0px 0px 200px black;
-    border-radius: 10px;
-    transition: all 1s;
+  width: 29%;
+  text-align: center;
+  border: 5px solid black;
+  height: 300px;
+  margin: 1%;
+  margin-left: 0%;
+  box-shadow: var(--boxshadow), inset 0px 0px 200px black;
+  border-radius: 10px;
+  transition: all 1s;
 }
 
 .workcard:hover {
-    width: 30%;
-    height: 310px;
-    box-shadow: var(--colorshadow);
-    
+  width: 30%;
+  height: 310px;
+  box-shadow: var(--colorshadow);
 }
 
 #maincard {
-    width:70%;
-    height: 310px;
-    background-image: url("../images/cheat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 70%;
+  height: 310px;
+  background-image: url("../images/cheat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #maincard:hover {
-height: 380px;
-width: 72%;
+  height: 380px;
+  width: 72%;
 }
 
 .workheader {
-    width: 20%;
-    background-color: rgb(20, 25, 66);
-    min-height: 50px;
-    border: 1px dashed rgb(32, 112, 107);
-    position: relative;
-    top: -20px;
-    left: 10px;
-    box-shadow: 0px 0px 20px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 20%;
+  background-color: rgb(20, 25, 66);
+  min-height: 50px;
+  border: 1px dashed rgb(32, 112, 107);
+  position: relative;
+  top: -20px;
+  left: 10px;
+  box-shadow: var(--boxshadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* Section 3 - about me & contact */
 
 #aboutme {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid beige;
+  border-bottom: 1px solid beige;
 }
 
-#aboutme article, figure {
-    flex: 40%;
+#aboutme article,
+figure {
+  flex: 40%;
 }
 
 #aboutme article {
-    flex: 40%;
-    margin: 50px;
+  margin: 50px;
 }
 
 #aboutme article h3 {
-    margin: 20px;
+  margin: 20px;
 }
 
 #aboutme article p {
-    margin: 20px;
-    box-shadow: var(--boxshadow);
-    border-radius: 20px;
-    padding: 20px;
+  margin: 20px;
+  box-shadow: var(--boxshadow);
+  border-radius: 20px;
+  padding: 20px;
 }
 
-
-
 #aboutme figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #benthought {
-    width: 100%;
+  width: 100%;
 }
 
 #contact {
-    display: block;
-    margin: auto;
-    text-align: center;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 #contact nav ul li {
-    display: inline-block;
-    margin: 5%;
+  display: inline-block;
+  margin: 5%;
 }
 
 /* Footer */
 
 footer {
-    box-shadow: var(--boxshadow);
+  box-shadow: var(--boxshadow);
+  border-top: 1px solid beige;
 }
 
+
 #benart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #benart img {
-    width: 80px;
-    transition: all 0.5s;
-    box-shadow: var(--boxshadow);
+  width: 80px;
+  transition: all 0.5s;
+  box-shadow: var(--boxshadow);
 }
 
-
 #benart img:hover {
-box-shadow: var(--colorshadow);
-width: 90px;
-transform: rotate(360deg);
+  box-shadow: var(--colorshadow);
+  width: 90px;
+  transform: rotate(360deg);
 }
 
 #face {
-    font-family: monospace;
-    display: none;
+  font-family: monospace;
+  display: none;
 }
 
 #benart:hover #face {
-    display: block;
+  display: block;
 }
 
 /* media queries */
 
-@media screen and (max-width:890px) {
-    * {transition: all 0.5s;}
+@media screen and (max-width: 890px) {
+  * {
+    transition: all 0.5s;
+  }
 
-    #section1 {
-        flex-direction: column;         
-    }
+  #section1 {
+    flex-direction: column;
+  }
 
-    #section1 article {
-        width: 50%;
-        font-size: 120%;
-      
-    }
+  #section1 article {
+    width: 50%;
+    font-size: 120%;
+  }
 
-    #section1 figure {
-        width: 50%;
-      }
+  #section1 figure {
+    width: 50%;
+  }
 
-      #benphoto {
-          width: 100%;
-      }
+  #benphoto {
+    width: 100%;
+  }
 
-    .workcard {
-        width: 80%;
-    }
+  .workcard {
+    width: 80%;
+  }
 
-    #maincard {
-        width:90%;
-    }
+  #maincard {
+    width: 90%;
+  }
 
-    #maincard:hover {
-        width:95%;
-    }
+  #maincard:hover {
+    width: 95%;
+  }
 
+  .workcard:hover {
+    width: 90%;
+    height: 350px;
+  }
 
-    .workcard:hover {
-        width: 90%;
-        height: 350px;
-    }
+  #mywork {
+    flex-direction: column;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+  }
 
-    #mywork {
-        flex-direction: column;
-        margin: 50px;
-        justify-content: center;
-        align-items: center;
-    }
+  #workcard2 {
+    margin-left: 0%;
+  }
 
-    #workcard2 {
-        margin-left: 0%;
-    }
+  #aboutme {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
 
-    #aboutme {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    
+  #benthought {
+    width: 70%;
+  }
 }
 
-@media screen and (max-width:710px) {
+@media screen and (max-width: 710px) {
+  * {
+    transition: all 0.5s;
+  }
 
-    * {transition: all 0.5s;}
+  #section1 {
+    flex-direction: column;
+  }
 
-    #section1 {
-        flex-direction: column;         
-    }
+  #section1 article {
+    width: 70%;
+    font-size: 110%;
+  }
 
-    #section1 article {
-        width: 70%;
-        font-size: 110%;
-    }
+  #section1 figure {
+    width: 70%;
+  }
 
-    #section1 figure {
-        width: 70%;
-      }
+  #benphoto {
+    width: 100%;
+  }
+}
 
-      #benphoto {
-        width: 100%;
-      }
+@media screen and (max-width: 540px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
-
-    @media screen and (max-width:540px){
-        header {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header nav {
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-
-    }
+  header nav {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
