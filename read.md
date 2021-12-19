@@ -13,3 +13,9 @@ As I continue to improve my skills I will add more content to this website
 and update the my work section.
 
 Watch this space!
+
+![screenshot of deployed website](assets/images/screencapture-bg-portfolio-page.png)
+
+https://github.com/BGrowcott/bg_portfolio_page
+
+https://bgrowcott.github.io/bg_portfolio_page/
