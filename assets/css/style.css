@@ -4,6 +4,8 @@
   --textcolor: #f5f5dc;
   --colorshadow: 0px 0px 20px orange;
   --boxshadow: 0px 0px 20px black;
+  --sectionborder: 1px solid beige;
+  --boxborder: 5px solid black;
 }
 /* general */
 body {
@@ -13,7 +15,7 @@ body {
 }
 
 a {
-  color: beige;
+  color: var(--textcolor);
   text-decoration: none;
   text-decoration: underline;
   transition: all 0.5s;
@@ -31,7 +33,7 @@ header {
   align-content: center;
   width: 100%;
   box-shadow: var(--boxshadow);
-  border-bottom: 1px solid beige;
+  border-bottom: var(--sectionborder)
 }
 
 li a:hover {
@@ -87,7 +89,7 @@ header nav ul li {
 
 @keyframes bgcolor {
   from {
-    color: beige;
+    color: var(--textcolor);
   }
   to {
     background-color: rgb(189, 251, 255);
@@ -110,7 +112,7 @@ header nav ul li {
 
 #benphoto {
   width: 50%;
-  border: 5px solid black;
+  border: var(--boxborder);
   box-shadow: var(--boxshadow);
   border-radius: 20px;
 }
@@ -122,13 +124,13 @@ h1 {
 
 /* section2 - my work */
 
-.title {
-  margin-left: 50px;
-  margin-top: 10px;
+#section2 {
+  border-top: var(--sectionborder)
 }
 
-#section2 {
-  border-top: 1px solid beige;
+#section2 h2 {
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 #mywork {
@@ -138,16 +140,21 @@ h1 {
   justify-content: center;
 }
 
+/* Work cards styles - examples and links to deployed websites */
+
 .workcard {
   width: 29%;
   text-align: center;
-  border: 5px solid black;
+  border: var(--boxborder);
   height: 300px;
   margin: 1%;
   margin-left: 0%;
   box-shadow: var(--boxshadow), inset 0px 0px 200px black;
   border-radius: 10px;
   transition: all 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .workcard:hover {
@@ -160,30 +167,19 @@ h1 {
   width: 70%;
   height: 310px;
   background-image: url("../images/cheat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
 }
 
 #workcard2 {
   background-image: url("../images/rps.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #workcard3 {
   background-image: url("../images/MarketingAgency-Screenshot.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #workcard4 {
   background-image: url("../images/workinprogress.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 #maincard:hover {
@@ -208,31 +204,31 @@ h1 {
 
 /* Section 3 - about me & contact */
 
-#aboutme {
+#section3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-top: 1px solid beige;
-  border-bottom: 1px solid beige;
+  border-top: var(--sectionborder);
+  border-bottom: var(--sectionborder);
 }
 
-#aboutme article,
+#section3 article,
 figure {
   flex: 40%;
 }
 
-#aboutme article {
+#section3 article {
   margin: 50px;
 }
 
-#aboutme article p {
+#section3 article p {
   margin: 20px;
   box-shadow: var(--boxshadow);
   border-radius: 20px;
   padding: 20px;
 }
 
-#aboutme figure {
+#section3 figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,7 +253,7 @@ figure {
 
 footer {
   box-shadow: var(--boxshadow);
-  border-top: 1px solid beige;
+  border-top: var(--sectionborder);
 }
 
 #benart {
@@ -340,7 +336,7 @@ footer {
     margin-left: 0%;
   }
 
-  #aboutme {
+  #section3 {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -350,6 +346,8 @@ footer {
     width: 70%;
   }
 }
+
+/* media queries */
 
 @media screen and (max-width: 710px) {
   * {
@@ -373,6 +371,8 @@ footer {
     width: 100%;
   }
 }
+
+/* media queries */
 
 @media screen and (max-width: 540px) {
   header {

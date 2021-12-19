@@ -1,7 +1,7 @@
 Ben Growcott's Portfolio page
 
 This is my first portfolio page - it is a work in progress, but already contains
-an introduction and photo of myself, sections and images of my work so and how to contact me.
+an introduction and photo of myself, sections and images of my work and how to contact me.
 
 - Navigation links at the top of the page scroll the UI to that section.
 
