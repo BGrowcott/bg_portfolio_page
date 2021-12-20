@@ -165,7 +165,7 @@ h1 {
 
 #maincard {
   width: 70%;
-  height: 310px;
+  height: 320px;
   background-image: url("../images/cheat.jpg");
 
 }
@@ -183,7 +183,7 @@ h1 {
 }
 
 #maincard:hover {
-  height: 380px;
+  height: 390px;
   width: 72%;
 }
 
@@ -295,13 +295,9 @@ footer {
     flex-direction: column;
   }
 
-  #section1 article {
+  #section1 article,  #section1 figure {
     width: 50%;
     font-size: 120%;
-  }
-
-  #section1 figure {
-    width: 50%;
   }
 
   #benphoto {
@@ -327,8 +323,6 @@ footer {
 
   #mywork {
     flex-direction: column;
-    margin: 50px;
-    justify-content: center;
     align-items: center;
   }
 
@@ -358,13 +352,9 @@ footer {
     flex-direction: column;
   }
 
-  #section1 article {
+  #section1 article,  #section1 figure {
     width: 70%;
     font-size: 110%;
-  }
-
-  #section1 figure {
-    width: 70%;
   }
 
   #benphoto {
@@ -384,4 +374,21 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
   }
+}
+
+@media screen and (max-width:430px) {
+  header nav ul li {
+    display: list-item;
+    text-align: center;
+    margin: 5px;
+  }
+
+#section1, #mywork, #section3 article {
+  margin: 10px;
+}
+
+#section1 article, #section1 figure  {
+  width: 85%;
+}
+
 }
