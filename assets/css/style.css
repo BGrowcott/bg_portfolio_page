@@ -360,6 +360,11 @@ footer {
   #benphoto {
     width: 100%;
   }
+
+  #benthought {
+    width: 80%;
+  }
+
 }
 
 /* media queries */
@@ -374,6 +379,11 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
   }
+
+  #benthought {
+    width: 85%;
+  }
+
 }
 
 @media screen and (max-width:430px) {
@@ -387,8 +397,16 @@ footer {
   margin: 10px;
 }
 
+#section2 h2 {
+  margin-bottom: 25px;
+}
+
 #section1 article, #section1 figure  {
   width: 85%;
+}
+
+#benthought {
+  width: 100%;
 }
 
 }
