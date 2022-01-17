@@ -166,7 +166,7 @@ h1 {
 #maincard {
   width: 70%;
   height: 320px;
-  background-image: url("../images/cheat.jpg");
+  background-image: url("../images/quizScreenShotEdit.png");
 
 }
 
@@ -175,11 +175,11 @@ h1 {
 }
 
 #workcard3 {
-  background-image: url("../images/MarketingAgency-Screenshot.png");
+  background-image: url("../images/screencapture-127-0-0-1-5500-index-html-2022-01-17-15_40_46.png");
 }
 
 #workcard4 {
-  background-image: url("../images/workinprogress.png");
+  background-image: url("../images/password-generator-screenshot.png");
 }
 
 #maincard:hover {
