@@ -143,10 +143,10 @@ h1 {
 /* Work cards styles - examples and links to deployed websites */
 
 .workcard {
-  width: 29%;
+  width: 23%;
   text-align: center;
   border: var(--boxborder);
-  height: 300px;
+  height: 240px;
   margin: 1%;
   margin-left: 0%;
   box-shadow: var(--boxshadow), inset 0px 0px 200px black;
@@ -161,8 +161,8 @@ h1 {
 }
 
 .workcard:hover {
-  width: 30%;
-  height: 310px;
+  width: 24%;
+  height: 250px;
   box-shadow: var(--colorshadow);
 }
 
@@ -172,7 +172,8 @@ h1 {
 }
 
 #maincard {
-  width: 70%;
+  margin: 0% 10%;
+  width: 80%;
   height: 320px;
   background-image: url("../images/quizScreenShotEdit.png");
 }
@@ -189,13 +190,17 @@ h1 {
   background-image: url("../images/password-generator-screenshot.png");
 }
 
+#workcard5 {
+  background-image: url("../images/sunorshowerscreenshot.png");
+}
+
 #maincard:hover {
   height: 390px;
-  width: 72%;
+  width: 82%;
 }
 
 .workheader {
-  width: 30%;
+  width: 40%;
   background-color: rgb(20, 25, 66);
   min-height: 50px;
   border: 1px dashed rgb(32, 112, 107);
@@ -208,6 +213,10 @@ h1 {
   justify-content: center;
   border-radius: 5px;
   align-self: flex-start;
+}
+
+#maincard .workheader {
+  width:20%
 }
 
 .descriptions {
