@@ -340,6 +340,7 @@ footer {
 
   #maincard {
     width: 90%;
+    margin: 0px;
   }
 
   #maincard:hover {
