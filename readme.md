@@ -1,4 +1,4 @@
-Ben Growcott's Portfolio page
+# Ben Growcott's Portfolio page
 
 This is my first portfolio page - it is a work in progress, but already contains
 an introduction and photo of myself, sections and images of my work and how to contact me.
@@ -9,10 +9,17 @@ an introduction and photo of myself, sections and images of my work and how to c
 
 - My portfolio uses flex boxes and media queries to create a responsive layout that adapts to the viewport.
 
+Technology stack:
+-HTML
+-CSS
+-JavaScript
+
 As I continue to improve my skills I will add more content to this website
 and update the my work section.
 
 Watch this space!
+
+## Screenshot & links
 
 ![screenshot of deployed website](assets/images/screencapture-bg-portfolio-page.png)
 
