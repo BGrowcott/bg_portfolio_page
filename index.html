@@ -11,6 +11,7 @@
       name="description"
       content="Ben Growcott's first portfolio webpage - contains a bit about Ben, his work and how to contact him"
     />
+    <meta name="author" content="Ben Growcott" />
     <title>B.G Portfolio</title>
   </head>
 
@@ -27,6 +28,9 @@
           <li><a href="#mywork">My Work</a></li>
           <li><a href="#aboutme">About Me</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="assets/files/CV2022.pdf" download="BenG-CV">My CV</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -53,60 +57,114 @@
       <section id="section2">
         <h2 class="title">My Work</h2>
         <article id="mywork">
-          <a
-            class="workcard"
-            id="maincard"
-            href="https://bgrowcott.github.io/bg-magical-js-quiz/"
-            target="blank"
-            title="JavaScript Quiz"
-          >
-            <h3 class="workheader"><span>JavaScript Quiz</span></h3>
-            <div class='descriptions'>Short quiz I made on the fundamentals of JavaScript - powered by JavaScript</div>
-          </a>
-          <a
-            class="workcard"
-            id="workcard2"
-            href="https://bgrowcott.github.io/rock-paper-scissors/"
-            target="blank"
-            title="Rock, Paper, Scissors - Made with javascript"
-          >
-            <h3 class="workheader">Rock, Paper, Scissors</h3>
-            <div class='descriptions'>Rock, Paper, Scissors game with score keeper - powered by JavaScript</div>
-
-          </a>
-          <a
-            class="workcard"
-            id="workcard3"
-            href="https://bgrowcott.github.io/bg-dayplanner/"
-            target="_blank"
-            title="Day Planner"
-          >
-            <h3 class="workheader">Day Planner</h3>
-            <div class='descriptions'>Day planner with saveable inputs made using Bootstrap, MomentJS and powered by jQuery</div>
-
-          </a>
-          <a
-            class="workcard"
-            id="workcard4"
-            href="https://bgrowcott.github.io/bg-password-generator/"
-            target="_blank"
-            title="Random Password Generator"
-          >
-            <h3 class="workheader">Random Password Generator</h3>
-            <div class='descriptions'>Uses prompts to ascertain users password preferences - powered by JavaScript</div>
-
-          </a>
-          <a
-          class="workcard"
-          id="workcard5"
-          href="https://bgrowcott.github.io/bg-sun-or-showers"
-          target="_blank"
-          title="Weather App"
-        >
-          <h3 class="workheader">Weather App</h3>
-          <div class='descriptions'>Weather application made using data from the OpenWeather API. Search any city worldwide.</div>
-
-        </a>
+          <div class="workcard" id="maincard">
+            <a
+              href="https://oli-drew.github.io/bab-group-project-by-slackware/"
+              target="blank"
+              title="Birmingham Association Banquets"
+            >
+              <h3 class="workheader">
+                <span>Birmingham Association Banquets</span>
+              </h3>
+            </a>
+            <div class="descriptions">
+              <p>
+                Restaurant finder application - search any city or postcode to
+                find nearby restaurants.
+                <span
+                  >Copy API Key:
+                  <img
+                    title="Copy API Key"
+                    id="copyImage"
+                    src="assets/images/pngwing.com.png"
+                    alt="copy symbol"
+                /></span>
+              </p>
+              <a
+                href="https://github.com/oli-drew/bab-group-project-by-slackware"
+                target="_blank"
+                >GitHub Repo
+              </a>
+            </div>
+          </div>
+          <div class="workcard" id="workcard2">
+            <a
+              href="https://bgrowcott.github.io/bg-magical-js-quiz/"
+              target="blank"
+              title="JavaScript Quiz"
+            >
+              <h3 class="workheader">JavaScript Quiz</h3>
+            </a>
+            <div class="descriptions">
+              <p>
+                Short quiz on the fundamentals of JavaScript - powered by
+                JavaScript
+              </p>
+              <a
+                href="https://github.com/BGrowcott/bg-magical-js-quiz"
+                target="_blank"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="workcard" id="workcard3">
+            <a
+              href="https://bgrowcott.github.io/bg-dayplanner/"
+              target="_blank"
+              title="Day Planner"
+            >
+              <h3 class="workheader">Day Planner</h3>
+            </a>
+            <div class="descriptions">
+              <p>
+                Day planner with saveable inputs made using Bootstrap, MomentJS
+                and powered by jQuery
+              </p>
+              <a href="https://github.com/BGrowcott/bg-dayplanner" target="_blank"
+              >GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="workcard" id="workcard4">
+            <a
+              href="https://bgrowcott.github.io/bg-password-generator/"
+              target="_blank"
+              title="Random Password Generator"
+            >
+              <h3 class="workheader">Random Password Generator</h3>
+            </a>
+            <div class="descriptions">
+              <p>
+                Uses prompts to ascertain users password preferences - powered
+                by JavaScript
+              </p>
+              <a
+                href="https://github.com/BGrowcott/bg-password-generator"
+                target="_blank"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="workcard" id="workcard5">
+            <a
+              href="https://bgrowcott.github.io/bg-sun-or-showers"
+              target="_blank"
+              title="Weather App"
+            >
+              <h3 class="workheader">Weather App</h3>
+            </a>
+            <div class="descriptions">
+              <p>
+                Weather application made using data from the OpenWeather API.
+                Search any city worldwide.
+              </p>
+              <a
+                href="https://github.com/BGrowcott/bg-sun-or-showers"
+                target="_blank"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
         </article>
       </section>
       <!-- section 3 - about me and contact -->
@@ -197,5 +255,12 @@
         >
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/script/index.js"></script>
   </body>
 </html>
