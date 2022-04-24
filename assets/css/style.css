@@ -171,12 +171,16 @@ h1 {
   opacity: 1;
 }
 
-#maincard {
-  margin: 0% 20%;
-  width: 80%;
+#maincard, #maincard2 {
+  margin: 0% 1%;
+  width: 46%;
   height: 320px;
   background-position:initial;
   background-image: url("../images/babscreenshot.png");
+}
+
+#maincard2 {
+  background-image: url("../images/screencapture-pascal-project-herokuapp-myprofile-2022-04-16-16_29_22.png");
 }
 
 #copyImage{
@@ -200,9 +204,9 @@ h1 {
   background-image: url("../images/sunorshowerscreenshot.png");
 }
 
-#maincard:hover {
+#maincard:hover, #maincard2:hover {
   height: 390px;
-  width: 82%;
+  width: 48%;
 }
 
 .workheader {
@@ -349,12 +353,12 @@ footer {
     width: 80%;
   }
 
-  #maincard {
+  #maincard, #maincard2 {
     width: 90%;
-    margin: 0px;
+    margin: 10px 0px;
   }
 
-  #maincard:hover {
+  #maincard:hover, #maincard2:hover {
     width: 95%;
   }
 
